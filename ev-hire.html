@@ -7,6 +7,86 @@
    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
+    <style>
+        body{
+            background-color: #1c1c1c;
+        }
+       #hrus_formSection, #ourTeam_section, #testimonialSection.onlncrststmnl {
+    position: relative;
+    padding: 5rem 0;
+    background-color:#1c1c1c;
+    color: aliceblue;
+}
+.noSide.heading h2 {
+   
+    font-weight: var(--weight-600);
+    color: white;
+    font-size: var(--font-h3);
+}
+.navbar {
+            background-color:#1c1c1c;
+            width: 100%; /* Ensures the navbar is 100% of the viewport width */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        /* Change the text color in the navbar to white */
+        .navbar .nav-link,
+        .navbar .navbar-brand {
+            color: white !important; /* Ensure the text color is white */
+        }
+
+        /* Change the dropdown menu background and text color */
+        .navbar .dropdown-menu {
+            background-color:#1c1c1c; /* Set dropdown background to black */
+        }
+
+        .navbar .dropdown-item {
+            color: white; /* Set dropdown item text color to white */
+        }
+
+        .navbar .dropdown-item:hover {
+            background-color: #333; /* Change background on hover for dropdown items */
+        }
+
+        /* Remove any padding or margin from the navbar container */
+        .top_menu {
+            background-color: #1c1c1c;
+            padding: 0;
+            margin: 0;
+        }
+
+.flex-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space them out to opposite ends */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Ensure it takes the full width of the parent */
+}
+
+.lastimg {
+    height: auto;
+    width: 80px; /* Adjust as needed */
+}
+
+.lastb {
+    font-weight: bold;
+    font-size: small;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #008000;
+    color: white;
+}
+.row {
+    font-family:  "Roboto", sans-serif;
+}
+
+    
+
+
+   
+
+    </style>
 	
     <!-- End Favicons -->
     <link rel="stylesheet" href="https://skyyrider.com/public/css/bootstrap.min.css">
@@ -27,7 +107,7 @@
                     <div class="navbar-brand">
                         <a href="https://visionastraa.com/">
                             <div class="container">
-                                <img src="images/bg.jpeg" alt="Logo" style="width: 100px; margin-bottom: 20px; border-radius: 50%;">
+                                <img src="images/bg4.webp" alt="Logo" style="width: 100px; margin-bottom: 20px; border-radius: 50%;">
                             </div>
                             
                         </a>
@@ -137,7 +217,7 @@
                                                     </li>
                         <li class="nav-item d-sm-none d-block">
                             <a href="index" >
-                                <img src="images/bg2.png" width= "160px" class="mo-lg">
+                                <img src="bg.jpeg" width= "160px" class="mo-lg">
                             </a>
                         </li>
                     </ul>
@@ -145,10 +225,9 @@
     </header>
     
 
-    <!-- End Request project Call Back -->
-<section id="breadcrumb_bg">
-    <img src="images/bg2.png" class="img-fluid" alt="">
-</section>
+    
+    <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 24px; font-weight: bold; color: black; text-align: center; margin: 20px 0;">Hire EV Talent</h2>
+
 <section id="hrus_formSection">
     <div class="container">
         <div class="hrus_formSection">
@@ -176,37 +255,39 @@
                             <div class="from">
                                 <div class="from-group">
 									<div class="form-row">
-										<label for="">Organisation Name <span class="star">*</span></label>
-										<input type="text" class="form-control" id="organisation_name" placeholder="Organisation name">
-									</div>
+                                        <label for="" style="color: white;">Organisation Name <span class="star" style="color: red;">*</span></label>
+                                        <input type="text" class="form-control" id="organisation_name" placeholder="Organisation name" style="color: white; background-color: #333;">
+                                    </div>
+                                    
 									<div class="form-row">
-										<label for="">Position <span class="star">*</span></label>
-										<input type="text" class="form-control" id="position" placeholder="Eg. HR head">
-									</div>
-									<div class="form-row">
-										<label for="">Phone Number <span class="star">*</span></label>
-										<input type="tel" class="form-control" id="phone" placeholder="Enter phone number" onkeypress="return numbersonly(event);" maxlength="10">
-									</div>
-									<div class="form-row">
-										<label for="">Mail ID <span class="star">*</span></label>
-										<input type="email" class="form-control" id="mail" placeholder="Enter email">
-									</div>
-									<div class="form-row">
-										<label for="">Requirement <span class="star">*</span></label>
-										<input type="text" class="form-control" id="requirement" placeholder="Enter opening you are looking for">
-									</div>
-									<div class="form-row">
-										<label for="">Job Description</label>
-										<input type="text" class="form-control" id="job_description" placeholder="Enter job description">
-									</div>
-									<div class="form-row">
-										<label for="">Salary</label>
-										<input type="number" class="form-control" id="salary" placeholder="Enter salary" onkeypress="return numbersonly(event);">
-									</div>
-									<div class="form-row">
-										<label for="">Upload JD</label>
-										<input type="file" style="line-height: 30px;" class="form-control" id="upload_JD" accept="application/pdf">
-									</div>
+                                        <label for="" style="color: white;">Position <span class="star" style="color: red;">*</span></label>
+                                        <input type="text" class="form-control" id="position" placeholder="Eg. HR head" style="color: white; background-color: #333;">
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="" style="color: white;">Phone Number <span class="star" style="color: red;">*</span></label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" onkeypress="return numbersonly(event);" maxlength="10" style="color: white; background-color: #333;">
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="" style="color: white;">Mail ID <span class="star" style="color: red;">*</span></label>
+                                        <input type="email" class="form-control" id="mail" placeholder="Enter email" style="color: white; background-color: #333;">
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="" style="color: white;">Requirement <span class="star" style="color: red;">*</span></label>
+                                        <input type="text" class="form-control" id="requirement" placeholder="Enter opening you are looking for" style="color: white; background-color: #333;">
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="" style="color: white;">Job Description</label>
+                                        <input type="text" class="form-control" id="job_description" placeholder="Enter job description" style="color: white; background-color: #333;">
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="" style="color: white;">Salary</label>
+                                        <input type="number" class="form-control" id="salary" placeholder="Enter salary" onkeypress="return numbersonly(event);" style="color: white; background-color: #333;">
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="" style="color: white;">Upload JD</label>
+                                        <input type="file" style="line-height: 30px; color: white; background-color: #333;" class="form-control" id="upload_JD" accept="application/pdf">
+                                    </div>
+                                    
 									<span style="color:red" id="errmsg"></span>
                                     <button id="next" class="hero_btn w-100 mt-4" onclick="hiredfromus()">Submit</button>
                                 </div>
@@ -238,11 +319,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h5 class="text-uppercase">About Us</h5>
+                <h5 class="text-uppercase" style="color: green;">About Us</h5>
+
                 <p style="color: rgba(255, 255, 255, 1);">Empowering India’s talent to lead the global EV industry. <br><br>We are committed to bridging the gap between academia and industry, providing students with the practical skills and knowledge required to excel in the EV sector. Our programs are designed to foster innovation, entrepreneurship, and a deep understanding of the EV ecosystem.</p>
             </div>
             <div class="col-md-2 secpart">
-                <h5 class="text-uppercase">Links</h5>
+                <h5 class="text-uppercase" style="color: green;">Links</h5>
                 <ul class="list-unstyled listone">
                     <li><a href="https://visionastraa.com/ev-aboutus.html" style="color: rgba(255, 255, 255, 1);">About Us</a></li>
                     <li><a href="https://visionastraa.com/ev-course.html" style="color: rgba(255, 255, 255, 1);">Courses</a></li>
@@ -253,19 +335,31 @@
                 </ul>
             </div>
             <div class="col-md-3 thirdpart">
-                <h5 class="text-uppercase">Follow Us</h5>
+                <h5 class="text-uppercase" style="color: green;">Follow Us</h5>
                 <ul class="list-unstyled listtwo">
                     <li><a href="https://www.instagram.com/evacademy.in/" style="color: rgba(255, 255, 255, 1);">Instagram</a></li>
                     <li><a href="https://www.linkedin.com/company/va-ev-academy/?viewAsMember=true" style="color: rgba(255, 255, 255, 1);">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
+        <hr style="color: white; border-color: white;">
+
+        <div class="flex-container">
+            <div class="lalala">
+                <img class="lastimg" src="images/bg3.webp" alt="">
+                <p style="color: white;" class="mb-0 latext">© 2024 visionastraa. All rights reserved.</p>
+            </div>
+            <div>
+                <a href="https://visionastraa.com">
+                <button class="lastb" type="button">EV academy</button>
+            </div>
+        </div>
+        
+
+
       
 </footer>
 
-<div class="text-center py-4 footer_text ">
-    <p class="mb-0">© 2024 <a href="https://visionastraa.com/">Vision Astra Academy</a> - All Rights Reserved.</p>
-</div>
 
 
 </body>
